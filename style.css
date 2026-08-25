@@ -1,0 +1,1268 @@
+/* =========================================
+   GUJPHARM WEBSITE
+   MAIN CSS
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --navy: #071d3a;
+    --navy-light: #0d3157;
+
+    --green: #08783c;
+    --green-light: #0c9a4d;
+
+    --gold: #e5a326;
+
+    --white: #ffffff;
+    --cream: #fffdf8;
+
+    --text: #263548;
+    --muted: #667085;
+
+    --border: #e4e8ec;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: var(--text);
+
+    line-height: 1.6;
+
+    background: white;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color: var(--navy);
+
+    line-height: 1.2;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+
+    width: 92%;
+
+    max-width: 1150px;
+
+    margin: auto;
+
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.header {
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 999;
+
+    background:
+        rgba(255,255,255,0.97);
+
+    border-bottom:
+        1px solid var(--border);
+
+}
+
+.navbar {
+
+    min-height: 78px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.logo-area {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    color: var(--navy);
+
+}
+
+.logo-area img {
+
+    width: 54px;
+
+    height: 54px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 2px solid var(--gold);
+
+}
+
+nav {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 28px;
+
+}
+
+nav a {
+
+    color: var(--navy);
+
+    font-size: 14px;
+
+    font-weight: 700;
+
+    padding: 10px 0;
+
+}
+
+nav a:hover,
+nav a.active {
+
+    color: var(--green);
+
+}
+
+.contact-btn {
+
+    background: var(--navy);
+
+    color: white !important;
+
+    padding:
+        12px 19px !important;
+
+    border-radius: 8px;
+
+}
+
+.contact-btn:hover {
+
+    background: var(--green);
+
+}
+
+.menu-btn {
+
+    display: none;
+
+    background: none;
+
+    border: none;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.hero {
+
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    position: relative;
+
+    background-image:
+        url(""C:\Users\HP\OneDrive\Desktop\Gujpharm\Gujpharm Background image.png"");
+
+    background-size: cover;
+
+    background-position: center;
+
+}
+
+.hero-overlay {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(4,25,49,.88),
+            rgba(4,25,49,.55),
+            rgba(4,25,49,.15)
+        );
+
+}
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 760px;
+
+    color: white;
+
+    padding:
+        100px 0;
+
+}
+
+.small-title {
+
+    color: #f4c15b;
+
+    font-size: 13px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+
+}
+
+.hero h1 {
+
+    color: white;
+
+    font-size:
+        clamp(38px, 5vw, 65px);
+
+    margin:
+        18px 0 20px;
+
+}
+
+.hero p {
+
+    max-width: 700px;
+
+    font-size: 18px;
+
+    color: #eef5f2;
+
+}
+
+.hero-buttons {
+
+    display: flex;
+
+    gap: 14px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+
+}
+
+
+/* =========================================
+   BUTTONS
+========================================= */
+
+.btn {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding:
+        13px 23px;
+
+    border-radius: 8px;
+
+    font-weight: 800;
+
+    transition: .2s;
+
+}
+
+.primary-btn {
+
+    background:
+        var(--green);
+
+    color: white;
+
+}
+
+.primary-btn:hover {
+
+    background:
+        var(--navy-light);
+
+}
+
+.white-btn {
+
+    background: white;
+
+    color: var(--navy);
+
+}
+
+.white-btn:hover {
+
+    background: #edf4ef;
+
+}
+
+
+/* =========================================
+   HIGHLIGHTS
+========================================= */
+
+.highlights {
+
+    background:
+        var(--navy);
+
+    color: white;
+
+}
+
+.highlight-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    padding: 24px 0;
+
+}
+
+.highlight-grid div {
+
+    text-align: center;
+
+    border-right:
+        1px solid
+        rgba(255,255,255,.2);
+
+}
+
+.highlight-grid div:last-child {
+
+    border-right: none;
+
+}
+
+.highlight-grid strong {
+
+    display: block;
+
+    font-size: 18px;
+
+}
+
+.highlight-grid span {
+
+    display: block;
+
+    font-size: 12px;
+
+    color: #b9c7d6;
+
+}
+
+
+/* =========================================
+   SECTIONS
+========================================= */
+
+.section {
+
+    padding:
+        90px 0;
+
+}
+
+.section-label {
+
+    color:
+        var(--green);
+
+    font-size: 12px;
+
+    letter-spacing: 1.5px;
+
+    font-weight: 800;
+
+}
+
+.section h2 {
+
+    font-size:
+        clamp(30px,4vw,46px);
+
+    margin:
+        12px 0 20px;
+
+}
+
+.section p {
+
+    color:
+        var(--muted);
+
+    margin-bottom: 15px;
+
+}
+
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about {
+
+    display: grid;
+
+    grid-template-columns:
+        1.1fr .9fr;
+
+    gap: 70px;
+
+    align-items: center;
+
+}
+
+.green-link {
+
+    color:
+        var(--green);
+
+    font-weight: 800;
+
+}
+
+.vision-card {
+
+    background:
+        linear-gradient(
+            145deg,
+            #f3faf5,
+            #ffffff
+        );
+
+    border:
+        1px solid #dce9e0;
+
+    border-radius: 22px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    box-shadow:
+        0 15px 40px
+        rgba(8,55,32,.08);
+
+}
+
+.vision-card img {
+
+    width: 180px;
+
+    height: 180px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-bottom: 18px;
+
+}
+
+.vision-card h3 {
+
+    font-size: 24px;
+
+}
+
+.vision-card p {
+
+    color:
+        var(--green);
+
+    font-weight: 700;
+
+}
+
+
+/* =========================================
+   SERVICES
+========================================= */
+
+.services-section {
+
+    background:
+        #f6faf7;
+
+}
+
+.section-heading {
+
+    text-align: center;
+
+    max-width: 750px;
+
+    margin:
+        0 auto 45px;
+
+}
+
+.service-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap: 22px;
+
+}
+
+.service-card {
+
+    background: white;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 18px;
+
+    padding: 28px;
+
+    transition: .25s;
+
+}
+
+.service-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 18px 40px
+        rgba(0,0,0,.08);
+
+    border-color:
+        #c6e0d0;
+
+}
+
+.service-icon {
+
+    font-size: 35px;
+
+    margin-bottom: 18px;
+
+}
+
+.service-card h3 {
+
+    font-size: 20px;
+
+    margin-bottom: 12px;
+
+}
+
+.service-card p {
+
+    font-size: 14px;
+
+    min-height: 85px;
+
+}
+
+.service-card a {
+
+    color:
+        var(--green);
+
+    font-weight: 800;
+
+    font-size: 14px;
+
+}
+
+
+/* =========================================
+   WHY US
+========================================= */
+
+.why-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2,1fr);
+
+    gap: 20px;
+
+}
+
+.why-card {
+
+    display: flex;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 15px;
+
+}
+
+.why-card > span {
+
+    font-size: 20px;
+
+    font-weight: 800;
+
+    color:
+        var(--gold);
+
+}
+
+.why-card h3 {
+
+    font-size: 19px;
+
+    margin-bottom: 8px;
+
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.cta {
+
+    background:
+        linear-gradient(
+            110deg,
+            var(--navy),
+            #0d5d40
+        );
+
+    color: white;
+
+    padding:
+        65px 0;
+
+}
+
+.cta-content {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 35px;
+
+}
+
+.cta span {
+
+    color:
+        #f2bf52;
+
+    font-size: 12px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+}
+
+.cta h2 {
+
+    color: white;
+
+    margin:
+        10px 0;
+
+}
+
+.cta p {
+
+    color:
+        #ccd8e0;
+
+}
+
+
+/* =========================================
+   PAGE BANNER
+========================================= */
+
+.page-banner {
+
+    padding:
+        90px 0;
+
+    background:
+        linear-gradient(
+            120deg,
+            var(--navy),
+            #0d5c3e
+        );
+
+    color: white;
+
+}
+
+.page-banner span {
+
+    color:
+        #f4c15b;
+
+    font-weight: 800;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+}
+
+.page-banner h1 {
+
+    color: white;
+
+    font-size:
+        clamp(36px,5vw,58px);
+
+    margin:
+        14px 0;
+
+}
+
+.page-banner p {
+
+    max-width: 700px;
+
+    color:
+        #d5e0e2;
+
+}
+
+
+/* =========================================
+   SERVICE DETAILS
+========================================= */
+
+.service-list {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+
+}
+
+.service-detail {
+
+    display: grid;
+
+    grid-template-columns:
+        100px 1fr;
+
+    gap: 35px;
+
+    padding: 42px;
+
+    border:
+        1px solid var(--border);
+
+    border-radius: 20px;
+
+    box-shadow:
+        0 8px 25px
+        rgba(0,0,0,.04);
+
+}
+
+.number {
+
+    font-size: 48px;
+
+    font-weight: 800;
+
+    color:
+        #d7e9df;
+
+}
+
+.service-detail h2 {
+
+    margin:
+        10px 0 15px;
+
+    font-size: 32px;
+
+}
+
+.service-detail ul {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 8px 30px;
+
+    padding-left: 20px;
+
+    color:
+        var(--muted);
+
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        .9fr 1.1fr;
+
+    gap: 65px;
+
+}
+
+.contact-information h2 {
+
+    font-size: 40px;
+
+    margin:
+        12px 0 15px;
+
+}
+
+.contact-item {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 25px;
+
+}
+
+.contact-item > span {
+
+    font-size: 24px;
+
+}
+
+.contact-item strong {
+
+    color:
+        var(--navy);
+
+}
+
+.contact-item p {
+
+    font-size: 14px;
+
+    margin:
+        2px 0;
+
+}
+
+.notice {
+
+    margin-top: 28px;
+
+    padding: 15px 18px;
+
+    background:
+        #fff9e9;
+
+    border-left:
+        4px solid var(--gold);
+
+    font-size: 13px;
+
+    color:
+        #6b5a2a;
+
+}
+
+.form-box {
+
+    background:
+        #f7faf8;
+
+    border:
+        1px solid #e0e9e3;
+
+    padding: 35px;
+
+    border-radius: 20px;
+
+}
+
+.form-box h3 {
+
+    font-size: 27px;
+
+    margin-bottom: 20px;
+
+}
+
+.form-box label {
+
+    display: block;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    margin:
+        15px 0 7px;
+
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+
+    width: 100%;
+
+    padding:
+        12px 14px;
+
+    border:
+        1px solid #d5dce2;
+
+    border-radius: 8px;
+
+    font: inherit;
+
+    background: white;
+
+}
+
+.form-box textarea {
+
+    resize: vertical;
+
+}
+
+.full-width {
+
+    width: 100%;
+
+    margin-top: 18px;
+
+}
+
+.form-message {
+
+    text-align: center;
+
+    font-size: 13px;
+
+    margin-top: 12px;
+
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+footer {
+
+    background:
+        #06182e;
+
+    color:
+        #bdcad7;
+
+    padding-top:
+        60px;
+
+}
+
+.footer-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1.5fr 1fr 1.2fr 1fr;
+
+    gap: 40px;
+
+    padding-bottom:
+        45px;
+
+}
+
+.footer-logo {
+
+    width: 75px;
+
+    height: 75px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    margin-bottom: 15px;
+
+}
+
+footer h4 {
+
+    color: white;
+
+    margin-bottom: 15px;
+
+}
+
+footer a {
+
+    display: block;
+
+    color:
+        #c6d1dc;
+
+    font-size: 13px;
+
+    margin: 8px 0;
+
+}
+
+footer a:hover {
+
+    color: white;
+
+}
+
+footer p {
+
+    font-size: 13px;
+
+}
+
+.copyright {
+
+    text-align: center;
+
+    border-top:
+        1px solid
+        rgba(255,255,255,.1);
+
+    padding: 18px;
+
+    font-size: 12px;
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width: 900px) {
+
+    .service-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .about,
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .footer-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+}
+
+
+@media(max-width: 700px) {
+
+    .menu-btn {
+
+        display: block;
+
+    }
+
+    nav {
+
+        display: none;
+
+        position: absolute;
+
+        top: 78px;
+
+        left: 0;
+
+        right: 0;
+
+        background: white;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        padding: 20px;
+
+        box-shadow:
+            0 10px 25px
+            rgba(0,0,0,.1);
+
+    }
+
+    nav.open {
+
+        display: flex;
+
+    }
+
+    nav a {
+
+        padding: 12px;
+
+    }
+
+    .hero {
+
+        min-height: 600px;
+
+    }
+
+    .highlight-grid {
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+    }
+
+    .highlight-grid div {
+
+        border-right: none;
+
+    }
+
+    .service-grid,
+    .why-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .service-detail {
+
+        grid-template-columns: 1fr;
+
+        padding: 28px;
+
+    }
+
+    .service-detail ul {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .cta-content {
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+    }
+
+    .footer-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .section {
+
+        padding:
+            65px 0;
+
+    }
+
+}
